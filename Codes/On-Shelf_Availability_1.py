@@ -16,16 +16,7 @@ import pandas as pd
 # MAGIC
 # MAGIC Across this and the subsequent notebooks comprising this demonstration, we will identify potential out-of-stock and on-shelf availability issues requiring further scrutiny through the analysis of store inventory records:
 # MAGIC
-# MAGIC <img src='https://brysmiwasb.blob.core.windows.net/demos/images/osa_tredence_alerts.jpg' width=75%>
-# MAGIC
 # MAGIC Out-of-stock (OOS) scenarios occur when a retailer does not have enough inventory to meet consumer demand.  When an insufficient number of product units are made available to customers, not only are immediate sales lost but consumer confidence in the retailer is eroded. Out-of-stocks occur for a variety of reasons. Poor forecasting, limited supply, and operational challenges are all common causes. With each, swift action is required to identify and address the source of the problem less they continue to impact sales.  The challenge with out of stocks is that by the time it is identified, the lead time for requesting replacement units and making them available on the shelf for the consumer may require the retailer to live with the issue for quite some time. It is therefore important that any analysis of stocking levels consider the time to replenishment associated with a given item and location.
-# MAGIC
-# MAGIC A bit different from OOS issues are on-shelf availability (OSA) problems where inventory may be in the store but it's not placed in a manner that makes it easily accessible to customers. Product may be in inventory but the principal display may give the impression the item is out of stock or in low quantity.  Items may be on the shelf but not pulled forward in a manner that makes them easily viewable by customers.  Product may be technically in inventory but in a backroom that's not accessible to customers. Regardless of the reason, OSA issues tend to lead to lost revenue for retailers.
-# MAGIC
-# MAGIC To illustrate how analysis of OOS and OSA issues may be performed, Tredence has made available a simulated set of inventory and vendor data available for download [here](https://github.com/tredenceofficial/OSA-Data). To make these data available for use with this and the related notebooks, download the CSV files and then load them to your cloud storage environment.  You may [mount](https://docs.databricks.com/data/databricks-file-system.html#mount-object-storage-to-dbfs) that storage to your Databricks environment as */mnt/osa*.  
-# MAGIC
-# MAGIC We have automated this downloading step for you and used a */tmp/osa* storage path instead through out this accelerator.
-
 # COMMAND ----------
 
 # MAGIC %md Move the downloaded data to the folder used throughout the accelerator:
