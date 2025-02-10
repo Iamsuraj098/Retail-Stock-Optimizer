@@ -1,7 +1,7 @@
-# On-Shelf Availability & Out-of-Stock Tracker
+# Retail Stock Optimizer
 
 ## Overview
-The **On-Shelf Availability (OSA) & Out-of-Stock (OOS) Tracker** is a data-driven solution designed to monitor and analyze product availability at retail locations. It helps optimize inventory levels, reduce stockouts, and improve supply chain efficiency by leveraging data processing techniques in **PySpark**.
+The **Retail Stock Optimizer** (On-Shelf Availability (OSA) & Out-of-Stock (OOS) Tracker) is a data-driven solution designed to monitor and analyze product availability at retail locations. It helps optimize inventory levels, reduce stockouts, and improve supply chain efficiency by leveraging data processing techniques in **PySpark**.
 
 ## Features
 - **Inventory Tracking**: Monitors on-hand stock levels at various store locations.
@@ -40,7 +40,9 @@ f.expr('LEAST(lead_time_in_dc, lead_time_in_transit, lead_time_on_order)')
 1. Load the dataset into Databricks.
 2. Ensure all necessary PySpark functions are imported:
    ```python
+   from pyspark.sql.types import *
    import pyspark.sql.functions as f
+   import pandas as pd
    ```
 3. Execute the transformations in sequence:
    - Compute inventory metrics
